@@ -4,5 +4,5 @@
 xcode入れれば `c++` コマンドが使えて幸せ
 
 ```bash
-c++ ${filename} -o ${output filename}
+c++ --std=c++11 ${filename} -o ${output filename}
 ```
