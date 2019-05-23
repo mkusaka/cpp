@@ -3,5 +3,11 @@
 using namespace std;
 
 int main() {
-  cout << "Hello, world!" << endl;
+  int a;
+
+  cout << "write some integer: ";
+  cin >> a;
+
+  cout << a + 10 << endl;
+  cout << "It's " << a << " plus 10!" << endl;
 }
