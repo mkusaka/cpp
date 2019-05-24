@@ -7,14 +7,11 @@ int main() {
   int a;
 
   cin >> a;
-  vector<int> data(5);
-  for (int i = 0; i < 5; i++) {
-    cin >> data.at(i);
-  }
+  vector<int> b = { 1, 2, 3, 4 };
 
   int cnt = 0;
-  for (int j = 0; j < data.size(); j++) {
-    if (data.at(j) == a) {
+  for (int x : b) {
+    if (x == a) {
       cnt++;
     }
   }
