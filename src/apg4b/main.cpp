@@ -1,13 +1,23 @@
 #include <string>
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
   int a;
 
-  cout << "write some integer: ";
   cin >> a;
+  vector<int> data(5);
+  for (int i = 0; i < 5; i++) {
+    cin >> data.at(i);
+  }
 
-  cout << a + 10 << endl;
-  cout << "It's " << a << " plus 10!" << endl;
+  int cnt = 0;
+  for (int j = 0; j < 5; j++) {
+    if (data.at(j) == a) {
+      cnt++;
+    }
+  }
+
+  cout << "同一の個数は: " << cnt << endl;
 }
