@@ -4,17 +4,21 @@
 using namespace std;
 
 int main() {
-  int a;
 
-  cin >> a;
-  vector<int> b = { 1, 2, 3, 4 };
+  int N;
+  cin >> N;
 
   int cnt = 0;
-  for (int x : b) {
-    if (x == a) {
-      cnt++;
-    }
-  }
+  int rest = 0;
 
-  cout << "同一の個数は: " << cnt << endl;
+  while (N > 0) {
+    if (N % 2 > 0) {
+      rest = N;
+      break;
+    }
+
+    N = N / 2;
+    cnt++;
+  }
+  cout << N << " は " << cnt << "回2で割れた" << endl << "2で割り切った残りは " << rest << endl;
 }
